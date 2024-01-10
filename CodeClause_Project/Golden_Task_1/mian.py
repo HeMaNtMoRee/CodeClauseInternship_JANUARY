@@ -93,25 +93,25 @@ if __name__=="__main__" :
             speak(f"Sir, the time is {strTime}")
 
         elif "open spotify" in query:
-            spotifyPath = "C:\\Users\\Dell\\AppData\\Roaming\\Spotify\\Spotify.exe"
+            spotifyPath = "YOUR_FILE_PATH_TO_OPEN_SPOTIFY.EXE" #PROVIDE FILE PATH TO OPEN SPOTIFY <USE DOUBLE BACKSLASH>
             os.startfile(spotifyPath)
             print("Opening Spotify...")
             speak("Opening Spotifi")
 
         elif "open code" in query:
-            codePath = "C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "YOUR_FILE_PATH_TO_OPEN_VS_CODE.EXE" #PROVIDE FILE PATH TO OPEN VS_CODE <USE DOUBLE BACKSLASH>
             os.startfile(codePath)
             print("Opening VS code..")
             speak("Opening vs code")
             
         elif "play music" in query:
-            musicPath = "C:\\Users\\Dell\\AppData\\Roaming\\Spotify\\Spotify.exe"
+            musicPath = "YOUR_FILE_PATH_TO_OPEN_SPOTIFY.EXE" #PROVIDE FILE PATH TO OPEN SPOTIFY <USE DOUBLE BACKSLASH>
             os.startfile(musicPath)
             print("Opening Spotify...")
             speak("Opening spotifi")
 
         elif "open vs code" in query:
-            vscodePath = "C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            vscodePath = "YOUR_FILE_PATH_TO_OPEN_VS_CODE.EXE" #PROVIDE FILE PATH TO OPEN VS_CODE <USE DOUBLE BACKSLASH>
             os.startfile(vscodePath)
             print("Opening VS code..")
             speak("Opening vs code")
@@ -120,7 +120,7 @@ if __name__=="__main__" :
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "hemantmore1676@gmail.com"    
+                to = "YOUR_EMAIL@XYZ"    #PROVIDE YOUR EMAIL <ABC@gmail.com>
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
